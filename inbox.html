@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>inbox</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/common.css" type="text/css">
+	<link rel="stylesheet" href="css/inbox.css" type="text/css">
+	<style type="text/css">
+		
+	</style>
+
+	<!-- [if lt IE 9]
+		<script src="js/html5shiv.js"</script>
+	<![endif] -->
+</head>
+	
+<body>
+    <header id="header" class="clearfix">
+        <h1><a href="index.html">a-message</a></h1>
+        <button id="btnToggle"><span>&equiv;</span></button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="write.html">Write</a></li>
+                <li><a href="inbox.html">Inbox</a></li>
+                <li><a href="sentbox.html">Sent box</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>INBOX</h2>
+        <table>
+            <thead>
+                <tr>
+					<th class="select" scope="col"><button class="chkBox" title="select all"><span class="blind">select</span></button></th>
+					<th class="asterisk" scope="col"><button class="star" title="asterisk"><span class="blind">asterisk</span></button></th>
+					<th class="sender" scope="col">SENDER</th>
+					<th class="title" scope="col">TITLE</th>
+					<th class="date" scope="col">DATE</th>
+				</tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="select"><button class="chkBox"><span class="blind">select</span></button></td>
+                    <td class="asterisk"><button class="star"><span class="blind">asterisk</span></button></td>
+                    <td class="sender">ella</td>
+                    <td class="title"><a href="#">echo</a></td>
+                    <td class="date">oct 25</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="pagenation">
+			<a class="prev_next" href="#">◀</a><!--
+		 --><span><a href="inbox1.html">1</a></span><!--
+		 --><a class="prev_next" href="#">▶</a>
+		</p>
+    </section>
+    <footer>
+        <p class="copy">&copy;Copyright. <span>All rights reserved.</span></p>
+    </footer>
+
+    <script src="js/common.js"></script>
+    
+
+    
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+/*+++++++++++++ Media Query +++++++++++++*/
+/* index.html */
+
+
+
+
+/* ===== mobile(start) ===== */
+@media screen and (max-width: 767px) {
+
+	section { width: 90vw; }
+	section h2 { margin-top: 1em; }
+
+	table { width: 100%; margin: 1em 0 0; table-layout: fixed; font-size: 0.8125em; }
+	table thead { display: none; }
+
+	table tr { border-top: 1px solid #f4f4f4; border-bottom: 1px solid #f4f4f4; }
+	table th, td { white-space: nowrap; text-overflow: ellipsis; overflow:hidden; height: 3em; padding-right: 0.5em; vertical-align: middle; color: #fff; text-align: left; }
+	table td > a { color: inherit; }
+
+	table .select { width: 10%; text-align: center; }
+	table .select button { display: inline-block; width: 1.25em; height: 1.25em; border: 1px solid #ddd; border-radius: 5px; 
+		vertical-align: top; }
+	table .select button.chk { border: none; background-color: #208637; }
+
+	table .asterisk { width: 10%; }
+	table .asterisk button { display: inline-block; width: 45%; height: 50%; 
+		border: 9px solid #ddd;
+		clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+		vertical-align: middle; }
+	table .asterisk button.chk { border: 9px solid #ffe800; }
+
+	table .reci { width: 15%; }
+	table .title { width: 45%; padding: 0 0.5em; }
+	table .date { width: 20%; text-align: center; }
+
+	section p { margin-top: 2em;text-align: center; }
+	section p span { margin: 0 1em; vertical-align: middle; }
+
+}
+/* ===== mobile(end) ===== */
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!    a-message    !!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+/* ===== tablet(start) ===== */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+	section h2 { margin-top: 1em; }
+
+	table { width: 100%; margin: 1em 0 0; table-layout: fixed; font-size: 0.875em; }
+
+	table tr { border-top: 1px solid #f4f4f4; border-bottom: 1px solid #f4f4f4; }
+	table th, td { white-space: nowrap; text-overflow: ellipsis; overflow:hidden; height: 3em; padding-right: 1em; vertical-align: middle; color: #fff; text-align: left; }
+	table td > a { color: inherit; }
+
+	table .select { width: 9%; text-align: center; }
+	table .select button { display: inline-block;  width: 1.375em; height: 1.375em;  border: 1px solid #ddd; border-radius: 5px; 
+		vertical-align: top; }
+	table .select button.chk { border: none; background-color: #208637; }
+
+	table .asterisk { width: 9%; }
+	table .asterisk button { display: inline-block; width: 1.375em; height: 1.375em; 
+		border: 11px solid #ddd;
+		clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+		vertical-align: middle; }
+	table .asterisk button.chk { border: 11px solid #ffe800; }
+
+	table .reci { width: 22%; }
+	table .title { width: 48%; padding: 0 1em; }
+	table .date { width: 12%; text-align: center; }
+
+	section p { margin-top: 2em;text-align: center; }
+	section p span { margin: 0 1em; vertical-align: middle; }
+
+
+}
+/* ===== tablet(end) ===== */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!    a-message    !!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+/* ===== desktop(start) ===== */
+@media screen and (min-width: 1025px){
+
+	section h2 { margin-top: 1em; }
+
+	table { width: 100%; margin: 1em 0 0; table-layout: fixed; font-size: 0.875em; }
+
+	table tr { border-top: 1px solid #f4f4f4; border-bottom: 1px solid #f4f4f4; }
+	table tbody tr:hover { font-weight: bold; background-color: rgba(255, 255, 255, 0.1); }
+	table th, td { white-space: nowrap; text-overflow: ellipsis; overflow:hidden; height: 3em; padding-right: 1em; vertical-align: middle; color: #fff; text-align: left; }
+	table td > a { color: inherit; }
+
+	table .select { width: 5%; text-align: center; }
+	table .select button { display: inline-block; width: 40%; height: 40%; border: 1px solid #ddd; border-radius: 5px; 
+		vertical-align: top; }
+	table .select button.chk { border: none; background-color: #208637; }
+
+	table .asterisk { width: 5%; }
+	table .asterisk button { display: inline-block; width: 45%; height: 50%; 
+		border: 11px solid #ddd;
+		clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+		vertical-align: middle; }
+	table .asterisk button.chk { border: 11px solid #ffe800; }
+
+	table .reci { width: 25%; }
+	table .title { width: 50%; padding: 0 1em; }
+	table .date { width: 15%; text-align: center; }
+
+	section p { margin-top: 2em;text-align: center; }
+	section p span { margin: 0 1em; vertical-align: middle; }
+
+
+
+
+
+}
+/* ===== desktop(end) ===== */

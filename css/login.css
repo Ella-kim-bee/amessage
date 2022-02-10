@@ -1,0 +1,87 @@
+/*+++++++++++++ Media Query +++++++++++++*/
+/* index.html */
+
+
+
+
+/* ===== mobile(start) ===== */
+@media screen and (max-width: 767px) {
+
+	form { text-align: center; }
+	fieldset p:nth-of-type(1) { margin-top: 3em; }
+	section label { display: block; font-size: 1em; font-weight: bold; }
+
+	section input[type~="email"] { margin-top: 1em; width: 250px; height: 34px; padding: 1em;  }
+	section input[type~="password"] { margin-top: 1em; width: 250px; height: 34px; padding: 1em;  }
+	
+	section p { margin: 3em auto 0; }
+	section p.desc { margin-top: 1em; color: #888; font-size: 0.875em; }
+	section p > a { display: inline-block; padding: 0.6em 0.6em 0.9em; margin-right: 1em; background-color: #208637; border: 3px solid #eee; 
+		border-radius: 5px; font-size: 0.875em; }
+	section input[type~="submit"] { display: inline-block; padding: 0.82em; background-color: #208637; border: 3px solid #eee; 
+		border-radius: 5px; color: #fff; font-size: 0.875em; }
+
+
+
+}
+/* ===== mobile(end) ===== */
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!    a-message    !!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+/* ===== tablet(start) ===== */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+	form { text-align: center; }
+	fieldset p:nth-of-type(1) { margin-top: 3em; }
+	section label { display: block; font-size: 1.25em; font-weight: bold; }
+
+	section input[type~="email"] { margin-top: 1em; width: 250px; height: 34px; padding: 1em;  }
+	section input[type~="password"] { margin-top: 1em; width: 250px; height: 34px; padding: 1em;  }
+	
+	section p { margin: 3em auto 0; }
+	section p.desc { margin-top: 1em; color: #888; }
+	section p > a { display: inline-block; padding: 0.6em 0.6em 0.9em; margin-right: 1em; background-color: #208637; border: 3px solid #eee; 
+		border-radius: 5px; }
+	section input[type~="submit"] { display: inline-block; padding: 0.82em; background-color: #208637; border: 3px solid #eee; 
+		border-radius: 5px; color: #fff; font-size: 1em;}
+
+}
+/* ===== tablet(end) ===== */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!    a-message    !!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+/* ===== desktop(start) ===== */
+@media screen and (min-width: 1025px){
+
+	form { text-align: center; }
+	fieldset p:nth-of-type(1) { margin-top: 3em; }
+	section label { display: block; font-size: 1.25em; font-weight: bold; }
+
+	section input[type~="email"] { margin-top: 1em; width: 250px; height: 34px; padding: 1em;  }
+	section input[type~="password"] { margin-top: 1em; width: 250px; height: 34px; padding: 1em;  }
+	
+	section p { margin: 3em auto 0; }
+	section p.desc { margin-top: 1em; color: #888; }
+	section p > a { display: inline-block; padding: 0.6em 0.6em 0.9em; margin-right: 1em; background-color: #208637; border: 3px solid #eee; 
+		border-radius: 5px; }
+	section input[type~="submit"] { display: inline-block; padding: 0.82em; background-color: #208637; border: 3px solid #eee; 
+		border-radius: 5px; color: #fff; font-size: 1em;}
+
+		
+}
+/* ===== desktop(end) ===== */
