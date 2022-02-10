@@ -43,14 +43,7 @@
 					<th class="date" scope="col">DATE</th>
 				</tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td class="select"><button class="chkBox"><span class="blind">select</span></button></td>
-                    <td class="asterisk"><button class="star"><span class="blind">asterisk</span></button></td>
-                    <td class="reci">echo</td>
-                    <td class="title">from.ella</td>
-                    <td class="date">jun 1</td>
-                </tr>
+            <tbody id="list">
             </tbody>
         </table>
         <p class="pagenation">
@@ -63,7 +56,40 @@
         <p class="copy">&copy;Copyright. <span>All rights reserved.</span></p>
     </footer>
 
-    <script src="js/common.js"></script>    
+    <script src="js/common.js"></script>
+    <script type="text/javascript">
+        let messages = []
+
+        function load(){
+            if(window.localStorage.getItem('messages') != null){
+                messages = JSON.parse(window.localStorage.getItem('messages'))
+            }
+        }
+
+        function render(message) {
+            let listElement = document.getElementById("list")
+            let computedMessage
+
+            if(typeof message.sendDate == 'string')
+                 computedMessage = new Date(message.sendDate).getMonth() + 1 + '월 ' + new Date(message.sendDate).getDate() + '일'
+        
+            let template = `<tr>
+                    <td class="select"><button class="chkBox"><span class="blind">select</span></button></td>
+                    <td class="asterisk"><button class="star"><span class="blind">asterisk</span></button></td>
+                    <td class="reci">${message.to}</td>
+                    <td class="title">${message.title}</td>
+                    <td class="date">${computedMessage}</td>
+                </tr>`
+            
+            listElement.innerHTML = listElement.innerHTML + template;
+        }
+
+        load();
+        
+        for(let message of messages) {
+            render(message)
+        }
+    </script>
 </body>
 
 </html>

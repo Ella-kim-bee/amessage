@@ -37,7 +37,7 @@
     </header>
     <section>
         <h2>NEW MESSAGE</h2>
-        <form action="write.jsp" name="write" method="post">
+        <form name="write" method="post">
             <fieldset>
                 <p>
                     <label for="to">To. </label>
@@ -53,7 +53,7 @@
                     </div>
                 </div>  
                 <p>
-                    <input type="submit" value="SEND" />
+                    <input type="button" value="SEND" onclick="save()" />
                     <input type="reset" value="RESET" />
                 </p>
             
@@ -90,6 +90,24 @@
 			theme: 'snow',
 
 		});
+
+        function save() {
+            let title = document.getElementById('title').value
+            let to = document.getElementById('to').value
+            let content = editor.getText()
+
+            let messages
+
+            if(window.localStorage.getItem('messages') != null){
+                console.log(1)
+                messages = JSON.parse(window.localStorage.getItem('messages'))
+                messages.push({title: title, to: to, content: content, sendDate: new Date()})
+            } else {
+                messages = [{title: title, to: to, content: content, sendDate: new Date()}]
+            }
+            
+            window.localStorage.setItem('messages', JSON.stringify(messages))
+        }
 	</script>
 
     <script src="js/common.js"></script>
