@@ -79,7 +79,7 @@
 	section p.desc { margin-top: 1em; color: #888; }
 	section p > a { display: inline-block; padding: 0.6em 0.6em 0.9em; margin-right: 1em; background-color: #208637; border: 3px solid #eee; 
 		border-radius: 5px; }
-	section input[type~="submit"] { display: inline-block; padding: 0.82em; background-color: #208637; border: 3px solid #eee; 
+	section input[type~="button"] { display: inline-block; padding: 0.82em; background-color: #208637; border: 3px solid #eee; 
 		border-radius: 5px; color: #fff; font-size: 1em;}
 
 		
