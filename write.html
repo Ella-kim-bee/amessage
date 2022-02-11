@@ -99,7 +99,6 @@
             let messages
 
             if(window.localStorage.getItem('messages') != null){
-                console.log(1)
                 messages = JSON.parse(window.localStorage.getItem('messages'))
                 messages.push({title: title, to: to, content: content, sendDate: new Date()})
             } else {
@@ -107,6 +106,8 @@
             }
             
             window.localStorage.setItem('messages', JSON.stringify(messages))
+
+            alert("send");
         }
 	</script>
 

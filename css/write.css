@@ -28,7 +28,7 @@
 	
 	section p { margin: 0.5em auto 0; }
 	
-	section input[type~="submit"] { display: inline-block; padding: 0.82em; background-color: #208637; border: 3px solid #eee; 
+	section input[type~="button"] { display: inline-block; padding: 0.82em; background-color: #208637; border: 3px solid #eee; 
 		border-radius: 5px; color: #fff; font-size: 0.875em;}
 	section input[type~="reset"] { display: inline-block; padding: 0.82em; background-color: #208637; border: 3px solid #eee; 
 		border-radius: 5px; color: #fff; font-size: 0.875em;}
@@ -68,7 +68,7 @@
 	
 	section p { margin: 1em auto 0; }
 	
-	section input[type~="submit"] { display: inline-block; padding: 0.82em; background-color: #208637; border: 3px solid #eee; 
+	section input[type~="button"] { display: inline-block; padding: 0.82em; background-color: #208637; border: 3px solid #eee; 
 		border-radius: 5px; color: #fff; font-size: 1em;}
 	section input[type~="reset"] { display: inline-block; padding: 0.82em; background-color: #208637; border: 3px solid #eee; 
 		border-radius: 5px; color: #fff; font-size: 1em;}
@@ -105,7 +105,7 @@
 	
 	section p { margin: 1em auto 0; }
 	
-	section input[type~="submit"] { display: inline-block; padding: 0.82em; background-color: #208637; border: 3px solid #eee; 
+	section input[type~="button"] { display: inline-block; padding: 0.82em; background-color: #208637; border: 3px solid #eee; 
 		border-radius: 5px; color: #fff; font-size: 1em;}
 	section input[type~="reset"] { display: inline-block; padding: 0.82em; background-color: #208637; border: 3px solid #eee; 
 		border-radius: 5px; color: #fff; font-size: 1em;}
