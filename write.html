@@ -98,16 +98,21 @@
 
             let messages
 
-            if(window.localStorage.getItem('messages') != null){
-                messages = JSON.parse(window.localStorage.getItem('messages'))
-                messages.push({title: title, to: to, content: content, sendDate: new Date()})
-            } else {
-                messages = [{title: title, to: to, content: content, sendDate: new Date()}]
+            if(title == '' || to == '' || content == ''){
+                alert("Fill in");
+                return false;
             }
-            
-            window.localStorage.setItem('messages', JSON.stringify(messages))
+            else{
+                if(window.localStorage.getItem('messages') != null){
+                    messages = JSON.parse(window.localStorage.getItem('messages'))
+                    messages.push({title: title, to: to, content: content, sendDate: new Date()})
+                } else {
+                    messages = [{title: title, to: to, content: content, sendDate: new Date()}]
+                }
+                window.localStorage.setItem('messages', JSON.stringify(messages))
 
-            alert("send");
+                alert("send");
+            }
         }
 	</script>
 

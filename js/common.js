@@ -24,9 +24,6 @@ for(let i = 0; i < btnChkBox.length; i++){
   });
 }
 
-// if(btnChkBox[0].classList.contains("chk")){
-//   btnChkBox
-// }
 
 
 // ========== button.star toggle ==========
