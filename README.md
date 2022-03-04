@@ -2,6 +2,7 @@
 Send a message to your future family, future friends, future neighbors and future me. It will be a special experience!
 
 느린 우체통을 모티브로 예약 메시지 web app을 제작하였습니다.
+반응형 제작되어 다양한 디바이스에서 동일한 환경을 제공합니다.
 
 1. Home에서 a-message버튼을 클릭하면 바로 write페이지로 이동합니다.
 
